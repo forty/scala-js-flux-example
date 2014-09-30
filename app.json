@@ -1,0 +1,7 @@
+{
+  "name": "scala-js-flux-example",
+  "description": "Reimplementation of Facebook Flux chat example with Scala.js",
+  "repository": "https://github.com/forty/scala-js-flux-example",
+  "logo": "https://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["flux", "scala", "react"]
+}
