@@ -24,8 +24,7 @@ object MessageSection extends TypedReactSpec {
     ThreadStore.removeChangeListener(() => onChange(self))
   }
 
-  // TODO: not implemented yet in scala js react
-  def componentDidUpdate(self: This) {
+  override def componentDidUpdate(self: This, prevProps: This#Props, prevState: This#State) {
     scrollToBottom(self)
   }
 
