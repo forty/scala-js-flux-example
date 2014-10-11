@@ -15,6 +15,9 @@ A simple simple `sbt start` should start the play server on port `9000`
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
+Or [here](http://scala-js-flux-example.herokuapp.com) if you don't want to wait for the project to build
+
+
 # Remarks, things to improve
  
 * I am not too happy with the fact that I have to explicitly describe how my models should map to JSON. I tried to use [scala-js-pickling](https://github.com/scala-js/scala-js-pickling), it worked well but the JSON generated is quite scala specific (it embeds types information in the JSON) which is not great if you plan to have some real JS using the JSON. If you know any solution that would allow me to automatically transform simple case classes into simple JSON let me know.
