@@ -58,6 +58,7 @@ object ApplicationBuild extends Build with UniversalKeys {
       libraryDependencies ++= 
           ("org.scala-lang.modules.scalajs" %%% "scalajs-dom" % Versions.scalajsDom)
           +: ("com.xored.scalajs" %%% "scalajs-react" % Versions.scalajsReact)
+          +: ("com.lihaoyi" %%% "upickle" % Versions.upickle)
           +: Dependencies.scalajs
     ) ++ sharedDirectorySettings
 
@@ -107,4 +108,5 @@ object Versions {
   val scala = "2.11.2"
   val scalajsDom = "0.6"
   val scalajsReact = "0.3.0"
+  val upickle = "0.2.5"
 }

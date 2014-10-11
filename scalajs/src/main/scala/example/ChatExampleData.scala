@@ -15,10 +15,10 @@ object ChatExampleData {
       RawMessage("m_6", "t_3", "Bill", "Functional Heads", System.currentTimeMillis() - 49999, "Hey Brian, are you going to be talking about functional stuff?"),
       RawMessage("m_7", "t_3", "Brian", "Brian and Bill", System.currentTimeMillis() - 39999, "At ForwardJS? Yeah, of course. See you there!"))
 
-    val messagesJS = messages.map(_.toJS)
+    val messagesJS = upickle.write(messages)
     
     dom.localStorage.clear()
-    dom.localStorage.setItem("message", js.JSON.stringify(messagesJS))
+    dom.localStorage.setItem("message", messagesJS)
   }
 
 }
