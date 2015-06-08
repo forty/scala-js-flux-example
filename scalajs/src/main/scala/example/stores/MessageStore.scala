@@ -61,6 +61,6 @@ object MessageStore extends ChangeEventEmitter {
       emitChange()
 
     case _ =>
-  })
+  }:(Any=>Any))
 
 }

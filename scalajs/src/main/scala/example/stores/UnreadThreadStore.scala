@@ -27,6 +27,6 @@ object UnreadThreadStore extends ChangeEventEmitter {
         
       case _ =>
     }
-  })
+  }:(Any=>Any))
 
 }

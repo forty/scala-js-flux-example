@@ -58,6 +58,6 @@ object ThreadStore extends ChangeEventEmitter {
       emitChange()
       
     case _ =>
-  })
+  }:(Any=>Any))
 
 }
