@@ -24,6 +24,7 @@ object MessageComposer extends TypedReactSpec with TypedEventListeners {
 
     val onKeyDown = input.onKeyPress(e => {
       if (e.keyCode == ENTER_KEY_CODE) {
+        e.preventDefault();
         val text = state.text.trim()
         if (!text.isEmpty()) {
           ChatMessageActionCreators.createMessage(text)
